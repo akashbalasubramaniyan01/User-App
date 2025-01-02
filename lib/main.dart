@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'views/home_view.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+
 void main() async {
   await Hive.initFlutter();
   await Hive.openBox('uploaded_images');
@@ -10,6 +10,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
